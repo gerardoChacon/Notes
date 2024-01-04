@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capas</title>
+    <style>
+        /* Definición de las capas 'top' y 'base' */
+        @layer top, base;
+
+        /* Reglas CSS en la capa 'base' */
+        @layer base {
+            div {
+                background-color: yellow; /* Establece el color de fondo de los <div> a amarillo en la capa 'base' */
+            }
+        }
+
+        /* Reglas CSS en la capa 'top' */
+        @layer top {
+            div {
+                background-color: aqua; /* Establece el color de fondo de los <div> a aqua en la capa 'top' */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>Capas</div> <!-- Este <div> tomará los estilos de la capa 'top' -->
+</body>
+</html>

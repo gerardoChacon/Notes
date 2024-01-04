@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consultas de contenedor</title>
+    <style>
+        div {
+            container: contenedor-x / inline-size; /* Define un contenedor con el nombre 'contenedor-x' */
+            background-color: blue;
+        }
+
+        span {
+            background-color: green; /* Color de fondo verde para los elementos <span> */
+        }
+
+        /* Aplica estilos cuando el contenedor 'contenedor-x' tiene un ancho de 200px o menos */
+        @container contenedor-x (width <= 200px) {
+            span {
+                background-color: red; /* Cambia el color de fondo de <span> a rojo si la condición se cumple */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div><span>Contenido</span></div>
+</body>
+</html>

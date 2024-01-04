@@ -1,0 +1,10 @@
+/* Estilo externo que se aplica a todo el cuerpo de la página. Este color se aplicaría a todos los elementos dentro del body, a menos que se sobrescriba con una regla más específica. */
+   body {
+    color: purple;
+  }
+  
+  /* Estilo externo específico para los elementos <p>. Este intenta establecer el color de todos los elementos <p> a azul. */
+  p {
+    color: blue;
+  }
+  

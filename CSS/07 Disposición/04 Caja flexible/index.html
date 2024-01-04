@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox</title>
+  <style>
+    .contenedor {
+      height: 80px;
+      background: rgb(187, 255, 0); /* Color de fondo del contenedor */
+      display: flex; /* Establece un contenedor Flexbox */
+      flex-direction: row; /* Los elementos se disponen en una fila */
+      justify-content: center; /* Centra los elementos horizontalmente */
+      align-items: center; /* Centra los elementos verticalmente */
+      flex-wrap: wrap; /* Permite que los elementos se ajusten a líneas adicionales si no hay espacio */
+    }
+
+    .contenedor div {
+      width: 80px;
+      height: 40px; /* Establece el tamaño de cada div en el contenedor */
+      /* display: inline-block; */ /* Comentado: Otra opción para la disposición de los elementos */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div style="background: rgb(119, 0, 255);"></div> <!-- Div con fondo violeta -->
+    <div style="background: rgb(255, 0, 64);"></div> <!-- Div con fondo rojo -->
+    <div style="background: rgb(0, 132, 255);"></div> <!-- Div con fondo azul -->
+    <span>1</span> <!-- Elemento span en el contenedor flex -->
+    <span>2</span> <!-- Otro elemento span en el contenedor flex -->
+    <span>3</span> <!-- Otro elemento span en el contenedor flex -->
+    <div style="background: rgb(255, 0, 64); order: 1;"> <!-- Div con fondo rojo y 'order: 1' para cambiar su posición -->
+    </div>
+    <div style="background: rgb(0, 132, 255);"></div> <!-- Otro div con fondo azul -->
+    <div style="background: rgb(119, 0, 255);"></div> <!-- Otro div con fondo violeta -->
+  </div>
+</body>
+
+</html>

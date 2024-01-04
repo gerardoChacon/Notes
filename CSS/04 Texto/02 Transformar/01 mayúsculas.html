@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transfomar</title>
+  <style>
+    /* Clase para transformar el texto a mayúsculas */
+    .mayus {
+      text-transform: uppercase;
+    }
+
+    /* Clase para transformar el texto a minúsculas */
+    .minus {
+      text-transform: lowercase;
+    }
+
+    /* Clase para capitalizar la primera letra de cada palabra */
+    .capi {
+      text-transform: capitalize;
+    }
+
+    /* Estilo para elementos <div> genéricos */
+    div {
+      /* En este caso, el 'none' sobrescribirá el 'capitalize', manteniendo el texto en su forma original */
+      text-transform: capitalize; /* Esto será sobrescrito y no tendrá efecto */
+      text-transform: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Ejemplo de uso de las clases definidas -->
+  <div class="mayus">Texto en mayúsculas</div>
+  <div class="minus">TEXTO EN MINÚSCULAS</div>
+  <div class="capi">primeras letras de cada palabra en mayúsculas</div>
+  <div>Texto con formato original</div>
+</body>
+</html>

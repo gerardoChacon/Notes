@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unidades</title>
+  <style>
+  /* Reset de márgenes y paddings */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    /* Establece el tamaño de fuente base para toda la página a 10px */
+    html {
+      font-size: 10px;
+    }
+
+    /* Estilos para el cuerpo de la página */
+    body {
+      margin: 0; /* Elimina los márgenes predeterminados */
+      font-size: 100%; /* Establece el tamaño de fuente al 100% del tamaño de fuente heredado, en este caso, 10px */
+      width: 50%; /* Establece el ancho del cuerpo a la mitad del ancho del elemento padre, que es <html> */
+    }
+
+    /* Estilos para los elementos <h1> */
+    h1 {
+      background: greenyellow; /* Color de fondo */
+      
+      /* Las siguientes dos líneas definen el ancho, pero la segunda sobrescribirá a la primera debido a que CSS usa la última declaración */
+      width: 300px; /* Ancho absoluto en píxeles */
+      width: 50%; /* Ancho relativo al tamaño del elemento padre */
+
+      /* De manera similar, estas dos líneas definen el tamaño de fuente, pero la última sobrescribirá a la primera */
+      font-size: 3em; /* Tamaño de fuente relativo al tamaño de fuente del elemento padre */
+      font-size: 3rem; /* Tamaño de fuente relativo al tamaño de fuente de la raíz (html) */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Unidades</h1>
+</body>
+
+</html>

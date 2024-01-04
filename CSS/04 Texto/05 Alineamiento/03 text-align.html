@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alineación</title>
+  <style>
+    /* Estilos para elementos <span> */
+    span {
+        letter-spacing: 2px; /* Aumenta el espaciado entre letras en 2px */
+    }
+
+    /* Estilos para elementos <p> */
+    p {
+        word-spacing: 5px; /* Aumenta el espaciado entre palabras en 5px */
+    }
+
+    /* Estilos para elementos <div> */
+    div {
+        /* text-align se utiliza para definir la alineación del texto.
+           Sin embargo, solo se aplicará la última declaración en este bloque.
+           Para este ejemplo, el texto se justificará a la derecha. */
+        text-align: left; /* Alineación a la izquierda (sobrescrita) */
+        text-align: center; /* Alineación al centro (sobrescrita) */
+        text-align: justify; /* Justificación del texto (sobrescrita) */
+        text-align: right; /* Alineación a la derecha */
+    }
+  </style>
+</head>
+<body>
+  <!-- Ejemplo de uso de los estilos definidos -->
+  <span>Espaciado entre letras aumentado.</span>
+  <p>Espacio aumentado entre palabras.</p>
+  <div>Texto justificado a la derecha.</div>
+</body>
+</html>

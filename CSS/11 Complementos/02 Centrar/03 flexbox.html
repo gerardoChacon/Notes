@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centrado con Flexbox</title>
+    <style>
+        /* Contenedor principal con Flexbox */
+        .contenedor-flex {
+            display: flex; /* Activa Flexbox */
+            justify-content: center; /* Centra los elementos horizontalmente */
+            align-items: center; /* Centra los elementos verticalmente */
+            height: 200px; /* Altura del contenedor para permitir centrado vertical */
+            width: 50%; /* Ancho definido para el contenedor */
+            margin: auto; /* Centra el contenedor en la página */
+            background-color: lightgray; /* Color de fondo para visualización */
+        }
+
+        /* Div interno para demostrar el centrado del texto */
+        .centrado-texto {
+            text-align: center; /* Centra el texto dentro del div */
+            width: 100px; /* Ancho del div para visualización */
+            background-color: coral; /* Color de fondo para visualización */
+            padding: 10px; /* Relleno para mejor visualización */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-flex">
+        <div class="centrado-texto">
+            Texto centrado
+        </div>
+    </div>
+
+</body>
+</html>
+
+

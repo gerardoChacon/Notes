@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espaciado</title>
+  <style>
+    /* Espacios en blanco: conserva los espacios y saltos de línea */
+    .preserve {
+      white-space: pre;
+      color: green;
+    }
+    /* Espacios en blanco: elimina los espacios extra y hace saltos de línea automáticos */
+    .normal {
+    white-space: normal;
+    color: red;
+    }
+    /* Espacios en blanco: no permite saltos de línea y trunca el texto */
+    .nowrap {
+        white-space: nowrap;
+        color: purple;
+    }
+    /* Envoltura de palabras: permite romper palabras largas */
+    .word-wrap {
+        word-wrap: break-word;
+        color: orange;
+    }
+</style>
+</head>
+<body>
+  
+</body>
+</html>
+
+  
+  <div class="preserve">Texto
+  con
+    saltos
+de
+      línea</div><br>
+  <div class="normal">Texto con espacios y saltos de
+  línea que se ajustan automáticamente.</div><br>
+  <div class="nowrap">Este texto no se rompe y tampoco hace saltos de línea.</div><br>
+  <div class="word-wrap">Palabraslargaquetendríaqueserdivididaenlíneas.</div><br>             

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Consulta de medios</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-size: 0; /* Elimina los espacios entre elementos inline-block */
+    }
+
+    div {
+      display: inline-block; /* Los elementos div se colocan en línea */
+      width: 100px;
+      height: 100px;
+      /* Colores de fondo definidos en línea en el cuerpo del documento */
+    }
+
+    /* Media query para pantallas con un ancho máximo de 500px */
+    @media only screen and (max-width: 500px) {
+      div {
+        width: 40px;
+        height: 40px; /* Reduce el tamaño de los divs en pantallas más pequeñas */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div style="background: rgb(255, 0, 64);"></div>
+  <div style="background: rgb(0, 255, 200);"></div>
+  <div style="background: rgb(119, 0, 255);"></div>
+  <div style="background: rgb(255, 0, 221);"></div>
+  <div style="background: rgb(166, 255, 0);"></div>
+</body>
+
+</html>

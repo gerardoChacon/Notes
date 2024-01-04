@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilo base para los divs */
+        .transition-div {
+            width: 150px;
+            height: 150px;
+            background-color: coral;
+            margin-bottom: 10px; /* Espaciado entre los divs */
+        }
+
+        /* Transición con propiedades separadas */
+        .ease {
+            transition-property: width; /* Especifica que la propiedad 'width' tendrá una transición */
+            transition-duration: 1s; /* Duración de la transición de 1 segundo */
+            transition-timing-function: ease; /* Función de temporización 'ease' para un efecto suave al inicio y al final */
+            /* Esto es equivalente a: transition: width 1s ease; */
+        }
+
+        /* Transición lineal */
+        .linear {
+            transition: width 1s linear; /* Transición lineal a lo largo de la duración completa */
+        }
+
+        /* Transición con ease-in */
+        .ease-in {
+            transition: width 1s ease-in; /* Inicio lento y luego acelera hacia el final */
+        }
+
+        /* Transición con ease-out */
+        .ease-out {
+            transition: width 1s ease-out; /* Inicio rápido y desacelera hacia el final */
+        }
+
+        /* Transición con ease-in-out */
+        .ease-in-out {
+            transition: width 1s ease-in-out; /* Suave al inicio y al final, más rápido en el medio */
+        }
+
+        /* Transición con cubic-bezier personalizada */
+        .cubic-bezier {
+            transition: width 1s cubic-bezier(0.68, -0.6, 0.32, 1.6); /* Controla los puntos de control de la curva Bézier para la transición */
+        }
+
+        /* Transición con pasos */
+        .steps {
+            transition: width 1s steps(4); /* Transición en pasos discretos, en este caso 4 pasos */
+        }
+
+        /* Amplía el div al pasar el cursor por encima */
+        .transition-div:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="transition-div ease">Ease</div>
+    <div class="transition-div linear">Linear</div>
+    <div class="transition-div ease-in">Ease-In</div>
+    <div class="transition-div ease-out">Ease-Out</div>
+    <div class="transition-div ease-in-out">Ease-In-Out</div>
+    <div class="transition-div cubic-bezier">Cubic-Bezier</div>
+    <div class="transition-div steps">Steps</div>
+</body>
+</html>

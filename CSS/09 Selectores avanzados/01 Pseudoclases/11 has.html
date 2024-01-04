@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Has</title>
+    <style>
+        /* Intenta aplicar estilos a los párrafos que contienen un elemento <span> */
+        p:has(span) {
+            color: red; /* Cambia el color del texto a rojo si el párrafo contiene un <span> */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <span>Tiene span</span> <!-- Este párrafo debería tener texto en rojo -->
+    </p>
+    <p>No tiene span</p> <!-- Este párrafo debería permanecer con el color predeterminado -->
+</body>
+</html>

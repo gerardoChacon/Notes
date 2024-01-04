@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Not</title>
+    <style>
+        /* Aplica estilo a todos los párrafos excepto aquellos con la clase .excluido */
+        p:not(.excluido) {
+            text-decoration: underline; /* Subraya los párrafos que no tienen la clase .excluido */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="excluido">No subrayado</p> <!-- Este párrafo no se subraya debido a su clase .excluido -->
+        <p>Subrayado</p> <!-- Este párrafo se subraya ya que no tiene la clase .excluido -->
+    </div>
+</body>
+</html>

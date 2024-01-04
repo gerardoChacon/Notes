@@ -1,0 +1,3 @@
+# Pseudoelemento
+
+Un pseudoelemento es una palabra clave añadida a un selector que permite estilizar una parte específica de un elemento. Los pseudoelementos se utilizan para aplicar estilos a partes de un elemento, como el primer carácter, la primera línea, o incluso para crear elementos decorativos que no existen en el HTML.

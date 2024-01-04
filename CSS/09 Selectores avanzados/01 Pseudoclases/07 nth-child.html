@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Childs</title>
+    <style>
+
+        /* Estilo para el primer párrafo de cada div */
+        p:first-child {
+            font-weight: bold; /* Hace que el texto del primer párrafo sea en negrita */
+        }
+
+           /* Estilo para el segundo párrafo de cada div */
+           p:nth-child(2) {
+            color: orange; /* Cambia el color del texto del segundo párrafo a naranja */
+        }
+
+        /* Estilo para el último párrafo de cada div */
+        p:last-child {
+            font-style: italic; /* Hace que el texto del último párrafo sea en cursiva */
+        }
+
+     
+    </style>
+</head>
+<body>
+    
+        <p>Primer párrafo</p> <!-- En negrita debido a :first-child -->
+        <p>Segundo párrafo</p> <!-- En naranja debido a :nth-child(2) -->
+        <p>Tercer párrafo</p> <!-- En cursiva debido a :last-child -->
+   
+       
+ 
+</body>
+</html>

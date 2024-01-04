@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation</title>
+    <style>
+        /* Definición de la animación 'mover' */
+        @keyframes mover {
+            0% {
+                transform: translateX(0); /* Posición inicial del div */
+            }
+            33.3% {
+                transform: translateY(200px);/* Mueve el div 200px hacia abajo al 33.3% del tiempo total */
+                background-color: red; 
+            }
+            66.6% {
+                transform: translateX(200px); /* Mueve el div 200px hacia la derecha al 66.6% del tiempo total */
+                background-color: purple;
+            }
+            99.9% {
+                transform: rotateX(0); /* Rota el div alrededor del eje X al 99.9% del tiempo total */
+                
+            }
+        }
+
+        /* Aplica la animación al div */
+        .animacion-ejemplo {
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            animation-name: mover; /* Nombre de la animación */
+            animation-duration: 2s; /* Duración de la animación */
+            animation-timing-function: ease-in-out; /* Función de temporización suave al inicio y al final */
+            animation-iteration-count: infinite; /* La animación se repite indefinidamente */
+        }
+    </style>
+</head>
+<body>
+    <div class="animacion-ejemplo"></div> <!-- Este div se animará según la definición de 'mover' -->
+</body>
+</html>
+

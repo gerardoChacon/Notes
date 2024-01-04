@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: coral;
+            /* Especifica las propiedades a las que se aplicará la transición */
+            transition-property: width, height, background-color, transform;
+            transition-duration: 1s; /* Duración de la transición de 1 segundo */
+            transition-timing-function: ease-in-out; /* Función de temporización suave al inicio y al final */
+            /* Esto es equivalente a: transition: width 1s ease-in-out, height 1s ease-in-out, background-color 1s ease-in-out, transform 1s ease-in-out; */
+        }
+
+        div:hover {
+            width: 300px; /* Ancho del div al pasar el cursor */
+            height: 300px; /* Altura del div al pasar el cursor */
+            background-color: skyblue; /* Color de fondo del div al pasar el cursor */
+            transform: rotate(45deg); /* Rota el div 45 grados al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+    <div></div> <!-- Este div cambiará de tamaño, color y rotará al pasar el cursor sobre él -->
+</body>
+</html>

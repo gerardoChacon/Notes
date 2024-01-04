@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Especificidad</title>
+  <style>
+    /* Estilo 1: Muy específico, aplica color azul al elemento <p> con id 'texto1' y clase 'textos'. 
+       Uso de !important para darle mayor prioridad sobre otras reglas. */
+    p.textos#texto1 {
+      color: blue !important;
+    }
+
+    /* Estilo 2: Igualmente específico que Estilo 1, pero sin !important, aplica color verde al mismo elemento. 
+       Esta regla es sobrescrita por el Estilo 1 debido al !important. */
+    p.textos#texto1 {
+      color: green;
+    }
+
+    /* Estilo 3: Menos específico que los anteriores, solo selecciona por id, aplica color amarillo al elemento con id 'texto1'. 
+       Sobrescrito por Estilos 1 y 2. */
+    #texto1 {
+      color: yellow;
+    }
+
+    /* Estilo 4: Aún menos específico, selecciona por clase, intenta aplicar color naranja a elementos con clase 'textos'. 
+       Sobrescrito por los estilos anteriores. */
+    .textos {
+      color: orange;
+    }
+
+    /* Estilo 5: Aplica color rojo a todos los elementos <p>. 
+       Menos específico que los estilos anteriores. */
+    p {
+      color: red;
+    }
+
+    /* Estilo 6: Aplica color púrpura y tamaño de fuente de 25px a todos los elementos dentro de <body>. 
+       Es el menos específico para colorear el <p>. */
+    body {
+      color: purple;
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Este párrafo tiene id 'texto1' y clase 'textos'. 
+       La regla más específica con !important (Estilo 1) se aplicará, por lo que el texto será azul. -->
+  <p id="texto1" class="textos">Texto</p>
+</body>
+
+</html>

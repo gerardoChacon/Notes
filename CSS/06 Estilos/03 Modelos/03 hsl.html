@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hue Saturation Lightness (Alpha)</title>
+  <style>
+    div {
+      color: hsl(120, 100%, 50%); /* Establece el color del texto en formato HSL, en este caso, verde */
+    }
+
+    .hsla {
+      color: hsla(120, 100%, 50%, 0.5); /* Color verde con opacidad del 50% en formato HSLA */
+      /* Explicación HSLA: 
+         'hsla(hue, saturation, lightness, alpha)' donde:
+         hue = Matiz, en grados (0-360)
+         saturation = Saturación, en porcentaje
+         lightness = Luminosidad, en porcentaje
+         alpha = Opacidad, de 0 (transparente) a 1 (opaco) */
+    }
+  </style>
+</head>
+
+<body>
+  <div>Texto con color en formato HSL.</div>
+  <div class="hsla">Texto con color en formato HSLA.</div>
+</body>
+
+</html>
+
+

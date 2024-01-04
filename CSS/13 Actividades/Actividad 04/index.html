@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto: Modelo de Caja</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color: orangered;
+            padding: 5rem;
+            color: white;
+            text-align: center;
+        }
+
+       h1{
+            border-bottom: 4px solid white;
+            padding-bottom: 5px;
+            width: 30%;
+            margin: auto;
+        }
+        
+        .container{
+            padding: .5rem;
+            box-sizing: border-box;
+            border-left: solid 10px orangered;
+            border-right: solid 10px orangered;
+            
+        }
+        img{
+            width: 300px;
+            height: 150px;
+            
+        }
+        img, h2, p, a{
+            margin: 1rem; 
+        }
+
+        h2{
+            color: orangered;
+            font-size: 2rem;
+        }
+
+        a{
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+
+        .product{
+            background-color: #f5f5f5;
+            border: solid #ccc .1px;
+            margin: 1rem;
+            
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: orangered;
+            height: 300px;
+            color: white;
+            padding-top: 1rem;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Bienvenido a Nuestra Landing 
+            Page de Comida</h1>
+    </header>
+
+    <section class="container">
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OIP.HM-q3ReNk-W4xCy523GJfQHaE5?pid=ImgDet&rs=1" alt="Producto 1">
+            <h2>Producto 1</h2>
+            <p>Descripción del producto. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="">Ver más</a>
+        </div>
+        <div  class="product">
+            <img src="https://th.bing.com/th/id/OIP.HM-q3ReNk-W4xCy523GJfQHaE5?pid=ImgDet&rs=1" alt="Producto 2">
+            <h2>Producto 2</h2>
+            <p>Descripción del producto. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">Ver más</a>
+        </div>
+    </section>
+    <footer class="footer">&copy;2023 Landing Page de Productos de Comida</footer>
+</body>
+</html>

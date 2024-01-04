@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nth-of-type</title>
+    <style>
+        /* Aplica estilo a los párrafos impares dentro del div */
+        p:nth-of-type(odd) {
+            background-color: brown; /* Establece el color de fondo de los párrafos impares a marrón */
+        }
+
+        /* Aplica estilo a los párrafos pares dentro del div */
+        p:nth-of-type(even) {
+            background-color: green; /* Establece el color de fondo de los párrafos pares a verde */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>1</p> <!-- Marrón, ya que es el 1er párrafo (impar) -->
+        <p>2</p> <!-- Verde, ya que es el 2do párrafo (par) -->
+        <p>3</p> <!-- Marrón, ya que es el 3er párrafo (impar) -->
+        <p>4</p> <!-- Verde, ya que es el 4to párrafo (par) -->
+        <p>5</p> <!-- Marrón, ya que es el 5to párrafo (impar) -->
+    </div>
+</body>
+</html>

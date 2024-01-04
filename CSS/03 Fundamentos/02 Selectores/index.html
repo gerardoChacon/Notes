@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Selectores</title>
+  <style>
+    /* Estilo general para todos los elementos <p> */
+    p {
+      color: blue; /* Color de texto azul */
+      font-size: 25px; /* Tamaño de fuente de 25 píxeles */
+    }
+
+    /* Estilo para los elementos con la clase 'clase-texto' */
+    .clase-texto {
+      color: red; /* Color de texto rojo */
+      font-size: 25px; /* Tamaño de fuente de 25 píxeles */
+    }
+
+    /* Estilo para el elemento con el ID 'texto-unico' */
+    #texto-unico {
+      color: green; /* Color de texto verde */
+      font-size: 25px; /* Tamaño de fuente de 25 píxeles */
+    }
+
+    /* Estilo para los elementos <span> dentro de los elementos con clase 'clase-texto' */
+    .clase-texto span {
+      color: purple; /* Color de texto púrpura */
+      font-size: 25px; /* Tamaño de fuente de 25 píxeles */
+    }
+
+    /* Estilo común para todos los elementos <p> y <span> */
+    p, span {
+      text-decoration: underline; /* Texto subrayado */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Párrafo con estilo básico y un elemento <span> anidado -->
+  <p>Texto <span>1</span></p>
+
+  <!-- Dos párrafos con la clase 'clase-texto' que afecta su color y tamaño de fuente,
+       y elementos <span> anidados que tendrán color púrpura debido a la regla específica de '.clase-texto span' -->
+  <p class="clase-texto">Texto <span>2</span></p>
+  <p class="clase-texto">Texto <span>3</span></p>
+
+  <!-- Un párrafo con ID 'texto-unico' que tiene un color y tamaño de fuente específicos,
+       y un elemento <span> anidado -->
+  <p id="texto-unico">Texto <span>4</span></p>
+</body>
+
+</html>

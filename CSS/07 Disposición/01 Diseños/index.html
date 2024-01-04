@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Diseños</title>
+  <style>
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100%;
+      display: grid;
+      grid-template-columns: 100px auto; /* Dos columnas: una fija de 100px y otra flexible */
+      grid-template-rows: 40px auto 100px; /* Tres filas: altura fija de 40px y 100px, y una flexible */
+      gap: 10px; /* Espacio entre las celdas de la cuadrícula */
+    }
+
+    nav,
+    aside,
+    main,
+    footer {
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    nav {
+      background: lightsalmon;
+      justify-content: space-around;
+      grid-row-start: 1; /* Inicia en la primera fila */
+      grid-row-end: 2; /* Termina en la segunda fila */
+      grid-column-start: 1; /* Inicia en la primera columna */
+      grid-column-end: 3; /* Termina en la tercera columna (abarca dos columnas) */
+    }
+
+    aside {
+      background: violet;
+      grid-row-start: 2; /* Inicia en la segunda fila */
+      grid-row-end: 3; /* Termina en la tercera fila */
+    }
+
+    main {
+      background: greenyellow;
+      grid-row-start: 2; /* Inicia en la segunda fila */
+      grid-row-end: 3; /* Termina en la tercera fila */
+    }
+
+    footer {
+      background: lightseagreen;
+      grid-row-start: 3; /* Inicia en la tercera fila */
+      grid-row-end: 4; /* Termina en la cuarta fila */
+      grid-column-start: 1; /* Inicia en la primera columna */
+      grid-column-end: 3; /* Termina en la tercera columna (abarca dos columnas) */
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="/home">Hogar</a>
+    <a href="/more">Aprende</a>
+    <a href="/about">Acerca De</a>
+  </nav>
+  <aside>Contenido Lateral</aside>
+  <main>Contenido Principal</main>
+  <footer>
+    &copy; Xavier Reyes Ochoa 2025
+  </footer>
+</body>
+
+</html>

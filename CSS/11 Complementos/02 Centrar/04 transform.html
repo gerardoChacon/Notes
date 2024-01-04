@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centrado con Transform</title>
+    <style>
+        .contenedor {
+            position: relative; /* El contenedor debe tener posición relativa */
+            height: 300px; /* Altura del contenedor */
+            width: 300px; /* Ancho del contenedor */
+            background-color: lightgray; /* Color de fondo para visualización */
+         
+        }
+
+        .elemento-centrado {
+            position: absolute; /* Posición absoluta para el elemento a centrar */
+            top: 50%; /* Posición desde la parte superior del contenedor */
+            left: 50%; /* Posición desde la izquierda del contenedor */
+            transform: translate(-50%, -50%); /* Desplaza el elemento para centrarlo exactamente */
+            background-color: coral; /* Color de fondo para visualización */
+            padding: 20px; /* Relleno para mejor visualización */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="elemento-centrado">
+            Elemento centrado
+        </div>
+    </div>
+
+</body>
+</html>

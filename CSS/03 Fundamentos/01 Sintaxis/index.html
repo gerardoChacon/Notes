@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sintaxis</title>
+  <meta charset="UTF-8" />
+  <style>
+    /* Estilos CSS internos
+       Aquí definimos los estilos que se aplicarán a los elementos de la página.
+       Seleccionamos elementos <p> con clase 'primero' y elementos <h1>,
+       y les aplicamos los siguientes estilos. */
+    p.primero,
+    h1 {
+      color: blue; /* Define el color del texto como azul */
+      font-size: 25px; /* Define el tamaño de la fuente a 25 pixeles */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Título</h1>
+  <p class="primero">Párrafo con clase 'primero'</p> <!-- Este párrafo heredará los estilos definidos para la clase 'primero' -->
+  <p>Párrafo sin clase específica</p> <!-- Este párrafo no tendrá los estilos de la clase 'primero', solo los estilos predeterminados del navegador -->
+</body>
+
+</html>

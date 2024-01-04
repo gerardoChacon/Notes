@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Móvil primero</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-size: 0; /* Remueve el espacio entre elementos inline-block */
+    }
+
+    div {
+      display: inline-block; /* Los elementos div se colocan en línea */
+      width: 40px; /* Ancho inicial para móviles */
+      height: 40px; /* Altura inicial para móviles */
+    }
+
+    /* Media query para pantallas más grandes (mínimo 500px de ancho) */
+    @media only screen and (min-width: 500px) {
+      div {
+        width: 100px; /* Aumenta el tamaño en pantallas más grandes */
+        height: 100px; /* Aumenta la altura en pantallas más grandes */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div style="background: rgb(255, 0, 64);"></div>
+  <div style="background: rgb(0, 255, 200);"></div>
+  <div style="background: rgb(119, 0, 255);"></div>
+  <div style="background: rgb(255, 0, 221);"></div>
+  <div style="background: rgb(166, 255, 0);"></div>
+</body>
+
+</html>

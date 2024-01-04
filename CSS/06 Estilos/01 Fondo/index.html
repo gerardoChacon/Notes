@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fondos</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      /* Aplicación de un gradiente lineal como fondo */
+      background: linear-gradient(red, blue, green); /* Gradiente que va de rojo a azul a verde */
+
+      /* Ejemplo de imagen de fondo usando una URL */
+      background-image: url(./assets/NY.jpeg); /* Reemplaza con tu URL de imagen */
+      
+      /* Propiedades adicionales para la imagen de fondo */
+      /* background-repeat: no-repeat; */ /* Evita que el fondo se repita */
+      /* background-position: center; */ /* Centra el fondo en el contenedor */
+      /* background-size: 100px; */ /* Establece un tamaño fijo para la imagen de fondo */
+      background-size: cover; /* Cambiado a 'cover' para que la imagen cubra todo el fondo */
+
+      /* Otras propiedades de fondo comentadas para referencia futura */
+      /* background-color: blue; */ /* Color de fondo sólido, sería visible si la imagen de fondo no cubre completamente el área */
+    }
+  </style>
+</head>
+
+<body>
+  <span>Background</span>
+</body>
+
+</html>
