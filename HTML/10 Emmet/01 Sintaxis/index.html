@@ -1,0 +1,122 @@
+<body>
+
+    <!-- Ejemplo 1: Crear un div con clase y ID -->
+    <!-- div.mi-clase#mi-id -->
+    <div class="mi-clase" id="mi-id"></div>
+
+    <!-- Ejemplo 2: Anidar elementos con clases y IDs -->
+    <!-- div#contenedor>h2.titulo+p.descripcion -->
+    <div id="contenedor">
+        <h2 class="titulo"></h2>
+        <p class="descripcion"></p>
+    </div>
+
+    <!-- Ejemplo 3: Elementos hermanos con clases y IDs -->
+    <!-- ul#lista>.item*3 -->
+    <ul id="lista">
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+
+    <!-- Ejemplo 4: Elementos hijo con clases y IDs -->
+    <!-- section#seccion>article.post*2>h3.titulo+p.contenido -->
+    <section id="seccion">
+        <article class="post">
+            <h3 class="titulo"></h3>
+            <p class="contenido"></p>
+        </article>
+        <article class="post">
+            <h3 class="titulo"></h3>
+            <p class="contenido"></p>
+        </article>
+    </section>
+
+    <!-- Ejemplo 5: Elementos hermanos (Lista desordenada) -->
+    <!-- ul>li*3 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- Ejemplo 6: Elementos hijo (Tabla) -->
+    <!-- table>tr*3>td*3 -->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- Ejemplo 7: Crear un enlace con una clase y un atributo href -->
+    <!-- a.enlace[href="#"] -->
+    <a href="#" class="enlace"></a>
+
+    <!-- Ejemplo 8: Anidar elementos con paréntesis -->
+    <!-- div>(header>h1)+(section>article*2>p)+(footer>p) -->
+    <div>
+        <header>
+            <h1></h1>
+        </header>
+        <section>
+            <article>
+                <p></p>
+            </article>
+            <article>
+                <p></p>
+            </article>
+        </section>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+    <!-- Ejemplo 9: Elementos hermanos con paréntesis -->
+    <!-- ul>(li>span{Item })*3 -->
+    <ul>
+        <li><span>Item 1</span></li>
+        <li><span>Item 2</span></li>
+        <li><span>Item 3</span></li>
+    </ul>
+
+    <!-- Ejemplo 10: Elemento padre con símbolo ^ -->
+    <!-- div>ul>li^p -->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+        <p></p>
+    </div>
+
+    <!-- Ejemplo 11: Combinar paréntesis y símbolo ^ -->
+    <!-- section>article>h2+div>(p>span)*3^footer>p -->
+    <section>
+        <article>
+            <h2></h2>
+            <div>
+                <p><span></span></p>
+                <p><span></span></p>
+                <p><span></span></p>
+            </div>
+        </article>
+        <footer>
+            <p></p>
+        </footer>
+    </section>
+
+    <!-- Ejemplo 12: Utilizar llaves para agregar texto -->
+    <!-- p{Este es un párrafo de ejemplo} -->
+    <p>Este es un párrafo de ejemplo</p>
+

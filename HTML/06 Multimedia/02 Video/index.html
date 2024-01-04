@@ -1,0 +1,26 @@
+<!-- Reproductor de Video con Controles -->
+<video controls src="video.mp4"></video>
+
+<!-- Reproductor de Video con Controles, Repetición Automática y Reproducción Automática -->
+<video controls loop autoplay>
+    
+    <!-- Fuentes de Video en Diferentes Formatos -->
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+
+    <!-- Subtítulos -->
+    <track src="video.es.vtt" kind="subtitles" label="Español" srclang="es" default>
+    <track src="video.en.vtt" kind="captions" label="English" srclang="en">
+
+    <!-- Descripciones para Accesibilidad -->
+    <track src="descriptions.en.vtt" kind="descriptions" label="Descriptions" srclang="en">
+
+    <!-- Capítulos -->
+    <track src="chapters.en.vtt" kind="chapters" label="Capítulos" srclang="es">
+
+    <!-- Texto a mostrar si el navegador no es compatible con ninguno de los formatos -->
+    Lo sentimos. Tu navegador no soporta este formato.
+</video>
+
+<!-- Resolución en Demanda (Adaptive Bitrate Streaming) -->
+<!-- Ejemplo: HBO, Netflix -->
