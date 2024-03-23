@@ -1,6 +1,6 @@
-class Song {
-    constructor(songName){
-        this.songName = songName;
+class Node {
+    constructor(value){
+        this.value = value;
         this.next = null; 
        }
 };
@@ -25,14 +25,14 @@ class MyQueue {
         }
 
     //Agregar una canción al final
-    enqueue(songName){
-       const newSong = new Song(songName);
+    enqueue(value){
+       const newNode = new Node(value);
         if (this.lenght === 0){
-            this.first = newSong;
-            this.last = newSong;
+            this.first = newNode;
+            this.last = newNode;
         } else {
-            this.last.next = newSong;
-            this.last = newSong;
+            this.last.next = newNode;
+            this.last = newNode;
         }
         this.lenght++;
         return this; 
@@ -49,12 +49,34 @@ class MyQueue {
 }
 
 const cola = new MyQueue();
+cola.enqueue('Luis');
+cola.enqueue('Enrique');
+cola.enqueue('José');
+cola.enqueue('Ana')
 console.log(cola);
-cola.enqueue('R U Mine');
-cola.enqueue('Dream');
-cola.enqueue('Snow');
-console.log(cola);
-console.log(`Reproduciendo "${cola.front().songName}" La útlima canción de la cola es "${cola.back().songName}"`);
+/* console.log(`Reproduciendo "${cola.front().songName}" La útlima canción de la cola es "${cola.back().songName}"`);
 cola.dequeue();
-console.log(cola);
+console.log(cola); */
 
+/* const myQueue = {
+    first: {
+      value: 'Luis',
+      next: {
+        value: 'Enrique',
+        next: {
+          value: 'José',
+          next: {
+            value: 'Ana',
+            next: null // Ana es el último, así que su next es null
+          }
+        }
+      }
+    },
+    last: { value: 'Ana', next: null }, // Ana ahora es el último nodo
+    length: 4 // Hay cuatro elementos en la cola
+  };
+  
+  
+
+  console.log(myQueue)
+   */
